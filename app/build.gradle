@@ -11,6 +11,9 @@ android {
     }
 
     defaultConfig {
+        //Cannot fit requested classes in a single dex file (# fields: 79909 > 65536)
+        multiDexEnabled true
+
         applicationId "me.jessyan.armscomponent.app"
         minSdkVersion rootProject.ext.android["minSdkVersion"]
         targetSdkVersion rootProject.ext.android["targetSdkVersion"]

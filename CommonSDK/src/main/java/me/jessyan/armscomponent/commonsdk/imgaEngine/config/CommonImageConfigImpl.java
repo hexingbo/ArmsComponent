@@ -24,9 +24,7 @@ import com.jess.arms.http.imageloader.ImageConfig;
 
 /**
  * ================================================
- * Created by JessYan on 30/03/2018 17:16
- * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
- * <a href="https://github.com/JessYanCoding">Follow me</a>
+ * 网络图片引擎：参数设置
  * ================================================
  */
 public class CommonImageConfigImpl extends ImageConfig {

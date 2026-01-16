@@ -17,9 +17,7 @@ package me.jessyan.armscomponent.gold.app;
 
 /**
  * ================================================
- * Created by JessYan on 25/04/2018 16:48
- * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
- * <a href="https://github.com/JessYanCoding">Follow me</a>
+ *
  * ================================================
  */
 public interface GoldConstants {

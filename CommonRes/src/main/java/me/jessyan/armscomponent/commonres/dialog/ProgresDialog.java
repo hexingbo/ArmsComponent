@@ -17,15 +17,14 @@ package me.jessyan.armscomponent.commonres.dialog;
 
 import android.app.Dialog;
 import android.content.Context;
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 
 import me.jessyan.armscomponent.commonres.R;
 
 /**
  * ================================================
- * Created by JessYan on 16/04/2018 17:01
- * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
- * <a href="https://github.com/JessYanCoding">Follow me</a>
+ * 加载进度圈
  * ================================================
  */
 public class ProgresDialog extends Dialog {

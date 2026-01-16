@@ -21,10 +21,6 @@ import java.util.List;
  * ================================================
  * 在html中引入外部css,js文件  常规拼接顺序css->html->js
  * https://github.com/HotBitmapGG/RxZhiHu/blob/https--github.com/HotBitmapGG/RxZhiHuDaily/app/src/main/java/com/hotbitmapgg/rxzhihu/utils/HtmlUtil.java
- * <p>
- * Created by JessYan on 25/04/2018 11:10
- * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
- * <a href="https://github.com/JessYanCoding">Follow me</a>
  * ================================================
  */
 public class HtmlUtil {

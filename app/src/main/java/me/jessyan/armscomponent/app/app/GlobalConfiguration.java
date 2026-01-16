@@ -15,10 +15,15 @@
  */
 package me.jessyan.armscomponent.app.app;
 
+import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
+import android.os.Bundle;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import com.jess.arms.base.delegate.AppLifecycles;
 import com.jess.arms.di.module.GlobalConfigModule;
@@ -28,17 +33,13 @@ import com.squareup.leakcanary.RefWatcher;
 
 import java.util.List;
 
+import me.jessyan.armscomponent.commonsdk.core.ActivityLifecycleCallbacksImpl;
+
 /**
  * ================================================
  * 组件的全局配置信息在此配置, 需要将此实现类声明到 AndroidManifest 中
  * CommonSDK 中已有 {@link me.jessyan.armscomponent.commonsdk.core.GlobalConfiguration} 配置有组件可公用的配置信息
  * 这里用来配置一些组件自身私有的配置信息
- *
- * @see com.jess.arms.base.delegate.AppDelegate
- * @see com.jess.arms.integration.ManifestParser
- * Created by JessYan on 12/04/2017 17:25
- * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
- * <a href="https://github.com/JessYanCoding">Follow me</a>
  * ================================================
  */
 public final class GlobalConfiguration implements ConfigModule {
@@ -57,7 +58,9 @@ public final class GlobalConfiguration implements ConfigModule {
 
     @Override
     public void injectActivityLifecycle(Context context, List<Application.ActivityLifecycleCallbacks> lifecycles) {
-
+        //ActivityLifecycleCallbacks 中的所有方法都会在 Activity (包括三方库) 的对应生命周期中被调用, 所以在对应的方法中可以扩展一些自己需要的逻辑
+        //可以根据不同的逻辑添加多个实现类
+        lifecycles.add(new ActivityLifecycleCallbacksImpl());
     }
 
     @Override

@@ -36,11 +36,6 @@ import me.jessyan.rxerrorhandler.handler.RetryWithDelay;
 /**
  * ================================================
  * 展示 Presenter 的用法
- *
- * @see <a href="https://github.com/JessYanCoding/MVPArms/wiki#2.4.4">Presenter wiki 官方文档</a>
- * Created by JessYan on 25/04/2016 10:59
- * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
- * <a href="https://github.com/JessYanCoding">Follow me</a>
  * ================================================
  */
 @ActivityScope

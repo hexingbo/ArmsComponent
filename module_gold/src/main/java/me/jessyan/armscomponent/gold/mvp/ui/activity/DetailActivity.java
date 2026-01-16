@@ -17,12 +17,13 @@ package me.jessyan.armscomponent.gold.mvp.ui.activity;
 
 import android.app.Dialog;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.jess.arms.base.BaseActivity;
@@ -38,11 +39,6 @@ import me.jessyan.armscomponent.gold.app.GoldConstants;
 /**
  * ================================================
  * 展示 View 的用法
- *
- * @see <a href="https://github.com/JessYanCoding/MVPArms/wiki#2.4.2">View wiki 官方文档</a>
- * Created by JessYan on 25/04/2016 10:59
- * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
- * <a href="https://github.com/JessYanCoding">Follow me</a>
  * ================================================
  */
 @Route(path = RouterHub.GOLD_DETAILACTIVITY)
@@ -82,11 +78,11 @@ public class DetailActivity extends BaseActivity {
                 return true;
             }
         });
-        mWebView.setWebChromeClient(new WebChromeClient(){
+        mWebView.setWebChromeClient(new WebChromeClient() {
             @Override
             public void onProgressChanged(WebView view, int newProgress) {
                 super.onProgressChanged(view, newProgress);
-                if (mDialog == null){
+                if (mDialog == null) {
                     return;
                 }
                 if (newProgress == 100) {

@@ -11,10 +11,6 @@ import com.alibaba.android.arouter.launcher.ARouter;
 /**
  * ================================================
  * 声明 {@link ARouter} 拦截器, 可以根据需求自定义拦截逻辑, 比如用户没有登录就拦截其他页面
- * <p>
- * Created by JessYan on 08/08/2017 15:54
- * Contact with jess.yan.effort@gmail.com
- * Follow me on https://github.com/JessYanCoding
  * ================================================
  */
 @Interceptor(priority = 8, name = "RouterInterceptor")

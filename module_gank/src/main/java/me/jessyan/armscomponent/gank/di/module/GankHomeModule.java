@@ -15,8 +15,8 @@
  */
 package me.jessyan.armscomponent.gank.di.module;
 
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.jess.arms.di.scope.ActivityScope;
 
@@ -34,11 +34,6 @@ import me.jessyan.armscomponent.gank.mvp.ui.adapter.GankHomeAdapter;
 /**
  * ================================================
  * 展示 Module 的用法
- *
- * @see <a href="https://github.com/JessYanCoding/MVPArms/wiki#2.4.5">Module wiki 官方文档</a>
- * Created by JessYan on 09/04/2016 11:10
- * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
- * <a href="https://github.com/JessYanCoding">Follow me</a>
  * ================================================
  */
 @Module

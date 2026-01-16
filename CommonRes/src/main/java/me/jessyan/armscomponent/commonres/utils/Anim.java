@@ -25,10 +25,6 @@ import me.jessyan.armscomponent.commonres.R;
 /**
  * ================================================
  * 动画工具类
- * <p>
- * Created by JessYan on 27/04/2017 21:40
- * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
- * <a href="https://github.com/JessYanCoding">Follow me</a>
  * ================================================
  */
 public class Anim {

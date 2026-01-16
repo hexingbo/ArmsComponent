@@ -16,8 +16,9 @@
 package me.jessyan.armscomponent.app.mvp.ui.activity;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.jess.arms.base.BaseActivity;
@@ -34,9 +35,7 @@ import me.jessyan.armscomponent.commonsdk.utils.Utils;
 
 /**
  * ================================================
- * Created by JessYan on 18/04/2018 17:03
- * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
- * <a href="https://github.com/JessYanCoding">Follow me</a>
+ *
  * ================================================
  */
 @Route(path = RouterHub.APP_SPLASHACTIVITY)

@@ -17,9 +17,7 @@ package me.jessyan.armscomponent.gold.mvp.model.entity;
 
 /**
  * ================================================
- * Created by JessYan on 26/04/2016 15:19
- * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
- * <a href="https://github.com/JessYanCoding">Follow me</a>
+ *
  * ================================================
  */
 public class GoldListBean {

@@ -19,8 +19,9 @@ import android.app.Activity;
 import android.app.Application;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.jess.arms.utils.ArmsUtils;
 
@@ -28,9 +29,7 @@ import timber.log.Timber;
 
 /**
  * ================================================
- * Created by JessYan on 02/04/2018 15:15
- * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
- * <a href="https://github.com/JessYanCoding">Follow me</a>
+ * Activity生命周期管理
  * ================================================
  */
 public class ActivityLifecycleCallbacksImpl implements Application.ActivityLifecycleCallbacks {

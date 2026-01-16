@@ -29,10 +29,6 @@ import me.jessyan.armscomponent.gold.mvp.ui.holder.GoldHomeItemHolder;
 /**
  * ================================================
  * 展示 {@link DefaultAdapter} 的用法
- * <p>
- * Created by JessYan on 09/04/2016 12:57
- * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
- * <a href="https://github.com/JessYanCoding">Follow me</a>
  * ================================================
  */
 public class GoldHomeAdapter extends DefaultAdapter<GoldListBean> {

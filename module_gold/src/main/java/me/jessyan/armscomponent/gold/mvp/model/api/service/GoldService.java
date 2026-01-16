@@ -33,10 +33,6 @@ import static me.jessyan.retrofiturlmanager.RetrofitUrlManager.DOMAIN_NAME_HEADE
  * ================================================
  * 展示 {@link Retrofit#create(Class)} 中需要传入的 ApiService 的使用方式
  * 存放关于 gold 的一些 API
- * <p>
- * Created by JessYan on 08/05/2016 12:05
- * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
- * <a href="https://github.com/JessYanCoding">Follow me</a>
  * ================================================
  */
 public interface GoldService {

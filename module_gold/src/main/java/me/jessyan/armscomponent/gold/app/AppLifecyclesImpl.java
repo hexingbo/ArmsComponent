@@ -17,7 +17,8 @@ package me.jessyan.armscomponent.gold.app;
 
 import android.app.Application;
 import android.content.Context;
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 
 import com.jess.arms.base.delegate.AppLifecycles;
 import com.jess.arms.integration.cache.IntelligentCache;
@@ -34,10 +35,6 @@ import static me.jessyan.armscomponent.gold.mvp.model.api.Api.GOLD_DOMAIN_NAME;
 /**
  * ================================================
  * 展示 {@link AppLifecycles} 的用法
- * <p>
- * Created by JessYan on 04/09/2017 17:12
- * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
- * <a href="https://github.com/JessYanCoding">Follow me</a>
  * ================================================
  */
 public class AppLifecyclesImpl implements AppLifecycles {

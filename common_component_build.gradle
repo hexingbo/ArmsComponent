@@ -18,6 +18,10 @@ android {
     }
 
     defaultConfig {
+
+        //Cannot fit requested classes in a single dex file (# fields: 79909 > 65536)
+        multiDexEnabled true
+
         minSdkVersion rootProject.ext.android["minSdkVersion"]
         targetSdkVersion rootProject.ext.android["targetSdkVersion"]
         versionCode rootProject.ext.android["versionCode"]

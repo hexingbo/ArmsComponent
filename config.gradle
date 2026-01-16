@@ -1,40 +1,51 @@
 ext {
 
     android = [
-            compileSdkVersion: 28,
-            buildToolsVersion: "28.0.3",
+            compileSdkVersion: 30,
+            buildToolsVersion: "30.0.3",
             minSdkVersion    : 16,
-            targetSdkVersion : 28,
+            targetSdkVersion : 30,
             versionCode      : 1,
             versionName      : "1.0.0"
     ]
 
     version = [
-            androidSupportSdkVersion: "28.0.0",
-            retrofitSdkVersion      : "2.6.0",
-            dagger2SdkVersion       : "2.23.2",
-            glideSdkVersion         : "4.9.0",
-            butterknifeSdkVersion   : "9.0.0",
+            androidSupportSdkVersion: "30.0.0",
+            androidXSdkVersion      : "1.1.0",
+            retrofitSdkVersion      : "2.7.2",
+            dagger2SdkVersion       : "2.26",
+            glideSdkVersion         : "4.11.0",
+            butterknifeSdkVersion   : "10.2.1",
             rxlifecycleSdkVersion   : "1.0",
             rxlifecycle2SdkVersion  : "2.2.2",
             espressoSdkVersion      : "3.0.1",
-            canarySdkVersion        : "1.6.3"
+//            canarySdkVersion        : "2.2",
+            canarySdkVersion        : "1.6.3",
     ]
 
     dependencies = [
             //support
-            "appcompat-v7"             : "com.android.support:appcompat-v7:${version["androidSupportSdkVersion"]}",
-            "design"                   : "com.android.support:design:${version["androidSupportSdkVersion"]}",
-            "support-v4"               : "com.android.support:support-v4:${version["androidSupportSdkVersion"]}",
-            "cardview-v7"              : "com.android.support:cardview-v7:${version["androidSupportSdkVersion"]}",
-            "annotations"              : "com.android.support:support-annotations:${version["androidSupportSdkVersion"]}",
-            "recyclerview-v7"          : "com.android.support:recyclerview-v7:${version["androidSupportSdkVersion"]}",
+//            "appcompat-v7"             : "com.android.support:appcompat-v7:${version["androidSupportSdkVersion"]}",
+//            "support-design"           : "com.android.support:design:${version["androidSupportSdkVersion"]}",
+//            "support-v4"               : "com.android.support:support-v4:${version["androidSupportSdkVersion"]}",
+//            "cardview-v7"              : "com.android.support:cardview-v7:${version["androidSupportSdkVersion"]}",
+            "support-annotations"      : "com.android.support:support-annotations:${version["androidSupportSdkVersion"]}",
+//            "recyclerview-v7"          : "com.android.support:recyclerview-v7:${version["androidSupportSdkVersion"]}",
+
+            //androidx
+            "appcompat"                : "androidx.appcompat:appcompat:${version["androidXSdkVersion"]}",
+            "design"                   : "com.google.android.material:material:${version["androidXSdkVersion"]}",
+            "legacy-support-v4"        : "androidx.legacy:legacy-support-v4:1.0.0",
+            "cardview"                 : "androidx.cardview:cardview:1.0.0",
+            "annotations"              : "androidx.annotation:annotation:${version["androidXSdkVersion"]}",
+            "recyclerview"             : "androidx.recyclerview:recyclerview:${version["androidXSdkVersion"]}",
 
             //network
             "retrofit"                 : "com.squareup.retrofit2:retrofit:${version["retrofitSdkVersion"]}",
             "retrofit-converter-gson"  : "com.squareup.retrofit2:converter-gson:${version["retrofitSdkVersion"]}",
             "retrofit-adapter-rxjava"  : "com.squareup.retrofit2:adapter-rxjava:${version["retrofitSdkVersion"]}",
             "retrofit-adapter-rxjava2" : "com.squareup.retrofit2:adapter-rxjava2:${version["retrofitSdkVersion"]}",
+//            "okhttp4"                  : "com.squareup.okhttp3:okhttp:4.0.0",
             "okhttp3"                  : "com.squareup.okhttp3:okhttp:3.12.3",
             "okhttp-urlconnection"     : "com.squareup.okhttp:okhttp-urlconnection:2.0.0",
             "glide"                    : "com.github.bumptech.glide:glide:${version["glideSdkVersion"]}",
@@ -50,10 +61,10 @@ ext {
             "photoview"                : "com.github.chrisbanes.photoview:library:1.2.3",
             "numberprogressbar"        : "com.daimajia.numberprogressbar:library:1.2@aar",
             "nineoldandroids"          : "com.nineoldandroids:library:2.4.0",
-            "paginate"                 : "com.github.markomilos:paginate:0.5.1",
+            "paginate"                 : "com.github.markomilos:paginate:0.5.1",//分页加载数据
             "vlayout"                  : "com.alibaba.android:vlayout:1.1.0@aar",
-            "lottie"                   : "com.airbnb.android:lottie:2.7.0",
             "autosize"                 : "me.jessyan:autosize:1.1.2",
+            "lottie"                   : "com.airbnb.android:lottie:2.7.0",
 
             //rx1
             "rxandroid"                : "io.reactivex:rxandroid:1.2.1",

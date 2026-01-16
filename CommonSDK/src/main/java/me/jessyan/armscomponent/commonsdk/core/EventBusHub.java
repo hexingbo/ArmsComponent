@@ -26,11 +26,6 @@ package me.jessyan.armscomponent.commonsdk.core;
  * <p>
  * Tips: 基础库中的 EventBusHub 仅用来存放需要跨组件通信的事件的 Tag, 如果某个事件只想在组件内使用 AndroidEventBus 进行通信
  * 那就让组件自行管理这个事件的 Tag
- *
- * @see <a href="https://github.com/JessYanCoding/ArmsComponent/wiki#3.5">EventBusHub wiki 官方文档</a>
- * Created by JessYan on 30/03/2018 17:46
- * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
- * <a href="https://github.com/JessYanCoding">Follow me</a>
  * ================================================
  */
 public interface EventBusHub {

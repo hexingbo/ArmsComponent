@@ -19,11 +19,12 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.jess.arms.base.BaseActivity;
@@ -34,10 +35,10 @@ import javax.inject.Inject;
 
 import butterknife.BindView;
 import me.jessyan.armscomponent.commonsdk.core.RouterHub;
+import me.jessyan.armscomponent.commonsdk.utils.HtmlUtil;
 import me.jessyan.armscomponent.zhihu.R;
 import me.jessyan.armscomponent.zhihu.R2;
 import me.jessyan.armscomponent.zhihu.app.ZhihuConstants;
-import me.jessyan.armscomponent.commonsdk.utils.HtmlUtil;
 import me.jessyan.armscomponent.zhihu.di.component.DaggerDetailComponent;
 import me.jessyan.armscomponent.zhihu.mvp.contract.DetailContract;
 import me.jessyan.armscomponent.zhihu.mvp.model.entity.ZhihuDetailBean;
@@ -48,11 +49,6 @@ import static com.jess.arms.utils.Preconditions.checkNotNull;
 /**
  * ================================================
  * 展示 View 的用法
- *
- * @see <a href="https://github.com/JessYanCoding/MVPArms/wiki#2.4.2">View wiki 官方文档</a>
- * Created by JessYan on 25/04/2016 10:59
- * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
- * <a href="https://github.com/JessYanCoding">Follow me</a>
  * ================================================
  */
 @Route(path = RouterHub.ZHIHU_DETAILACTIVITY)

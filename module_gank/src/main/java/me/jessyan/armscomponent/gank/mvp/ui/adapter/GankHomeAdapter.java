@@ -29,10 +29,6 @@ import me.jessyan.armscomponent.gank.mvp.ui.holder.GankHomeItemHolder;
 /**
  * ================================================
  * 展示 {@link DefaultAdapter} 的用法
- * <p>
- * Created by JessYan on 09/04/2016 12:57
- * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
- * <a href="https://github.com/JessYanCoding">Follow me</a>
  * ================================================
  */
 public class GankHomeAdapter extends DefaultAdapter<GankItemBean> {

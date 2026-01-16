@@ -22,6 +22,7 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.GlideBuilder;
+import com.bumptech.glide.Registry;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
@@ -43,9 +44,7 @@ import timber.log.Timber;
 
 /**
  * ================================================
- * Created by JessYan on 30/03/2018 17:16
- * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
- * <a href="https://github.com/JessYanCoding">Follow me</a>
+ * 网络图片引擎：参数设置
  * ================================================
  */
 public class CommonGlideImageLoaderStrategy implements BaseImageLoaderStrategy<CommonImageConfigImpl>, GlideAppliesOptions {
@@ -174,5 +173,10 @@ public class CommonGlideImageLoaderStrategy implements BaseImageLoaderStrategy<C
     @Override
     public void applyGlideOptions(Context context, GlideBuilder builder) {
         Timber.w("applyGlideOptions");
+    }
+
+    @Override
+    public void registerComponents(@NonNull Context context, @NonNull Glide glide, @NonNull Registry registry) {
+
     }
 }

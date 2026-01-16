@@ -19,9 +19,7 @@ import java.util.List;
 
 /**
  * ================================================
- * Created by JessYan on 25/04/2018 17:16
- * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
- * <a href="https://github.com/JessYanCoding">Follow me</a>
+ *
  * ================================================
  */
 public class DailyListBean {
