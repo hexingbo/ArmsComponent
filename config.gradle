@@ -18,7 +18,7 @@ ext {
             butterknifeSdkVersion   : "10.2.1",
             rxlifecycleSdkVersion   : "1.0",
             rxlifecycle2SdkVersion  : "2.2.2",
-            espressoSdkVersion      : "3.0.1",
+            espressoSdkVersion      : "3.2.0",
 //            canarySdkVersion        : "2.2",
             canarySdkVersion        : "1.6.3",
     ]
@@ -105,13 +105,19 @@ ext {
             "retrofit-url-manager"     : "me.jessyan:retrofit-url-manager:1.4.0",
             "lifecyclemodel"           : "me.jessyan:lifecyclemodel:1.0.1",
 
+
             //test
             "junit"                    : "junit:junit:4.12",
             "androidJUnitRunner"       : "android.support.test.runner.AndroidJUnitRunner",
             "runner"                   : "com.android.support.test:runner:1.0.1",
-            "espresso-core"            : "com.android.support.test.espresso:espresso-core:${version["espressoSdkVersion"]}",
-            "espresso-contrib"         : "com.android.support.test.espresso:espresso-contrib:${version["espressoSdkVersion"]}",
-            "espresso-intents"         : "com.android.support.test.espresso:espresso-intents:${version["espressoSdkVersion"]}",
+            "test-junit"               : "androidx.test.ext:junit:1.1.1",
+            "test-core"               : "androidx.test:core:1.1.1",
+            "espresso-core"            : "androidx.test.espresso:espresso-core:${version["espressoSdkVersion"]}",
+            "espresso-contrib"         : "androidx.test.espresso:espresso-contrib:${version["espressoSdkVersion"]}",
+            "espresso-intents"         : "androidx.test.espresso:espresso-intents:${version["espressoSdkVersion"]}",
+//            "espresso-core"            : "com.android.support.test.espresso:espresso-core:${version["espressoSdkVersion"]}",
+//            "espresso-contrib"         : "com.android.support.test.espresso:espresso-contrib:${version["espressoSdkVersion"]}",
+//            "espresso-intents"         : "com.android.support.test.espresso:espresso-intents:${version["espressoSdkVersion"]}",
             "mockito-core"             : "org.mockito:mockito-core:1.+",
             "timber"                   : "com.jakewharton.timber:timber:4.7.1",
             "logger"                   : "com.orhanobut:logger:2.2.0",
